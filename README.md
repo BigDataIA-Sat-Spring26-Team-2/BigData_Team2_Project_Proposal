@@ -4,6 +4,11 @@
 
 MedSignal is a pharmacovigilance platform that detects drug safety signals from FDA FAERS adverse event data, retrieves supporting clinical literature, and generates citation-grounded safety briefs using a three-agent LLM pipeline — reducing a process that takes human analysts days to minutes.
 
+
+Artifacts:
+Recording Link: [Watch on SharePoint](https://northeastern-my.sharepoint.com/:v:/g/personal/gupta_samik_northeastern_edu/IQCgJ-_kAEFMRrDcp7b7CD24AaBCUyK3Yo1PMsXTKgMQ9rc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2pqdmB)
+
+Codelab link: https://codelabs-preview.appspot.com/?file_id=1N3Qlxqajmn2oE1vrZrOXWtvcYoXdNeL78wEkplkGJoY#5
 ---
 
 ## The Problem
