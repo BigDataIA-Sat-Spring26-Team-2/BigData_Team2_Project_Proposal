@@ -1,4 +1,4 @@
-# MedSignal — Real-Time Drug Safety Signal Detection Platform
+# MedSignal — Drug Safety Signal Detection Platform
 
 > **DAMG 7245 — Big Data and Intelligent Analytics | Northeastern University | Spring 2026**
 
