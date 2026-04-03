@@ -1,4 +1,4 @@
-# MedSignal — Real-Time Drug Safety Signal Detection Platform
+# MedSignal — Drug Safety Signal Detection Platform
 
 > **DAMG 7245 — Big Data and Intelligent Analytics | Northeastern University | Spring 2026**
 
@@ -26,7 +26,7 @@ MedSignal is that infrastructure.
 ```
 FDA FAERS (16M records) ──► Kafka ──► Spark PRR Engine ──► Flagged Signals
                                                                     │
-PubMed (28K abstracts) ──► ChromaDB + BM25 ◄── Agent 2 (RAG) ◄────┤
+PubMed (28K abstracts) ──► ChromaDB + BM25 ◄── Agent 2 (RAG) ◄──────|
                                                                     │
 Reddit Health Forums ──────────────────────────► Agent 3 (SSS) ◄───┘
                                                       │
