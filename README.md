@@ -45,31 +45,7 @@ PubMed (1,800–1,930 abstracts) ──► ChromaDB ◄── Agent 2 (RAG) ◄�
 5. **Agent 3** synthesises all evidence into a structured SafetyBrief, assigns a priority tier, and validates output via Pydantic v2
 6. **All flagged signals** are routed to the Streamlit HITL queue — no signal is approved, rejected, or escalated without a human reviewer decision
 
----
-
-## Signal Severity Score
-
-MedSignal combines two independent evidence streams into a priority tier for each signal:
-
-```
-StatScore = (prr_score × 0.50) + (volume_score × 0.30) + (severity_score × 0.20)
-
-LitScore  = (relevance × 0.70) + (volume × 0.30)
-```
-
-StatScore and LitScore are presented independently to the reviewer. Weights for combining them into a single score are not applied — doing so requires pharmacovigilance domain expertise the team does not claim. The reviewer sees both scores transparently alongside the full SafetyBrief.
-
-**Priority Tiers:**
-
-| Tier | Condition | Reviewer Action |
-|------|-----------|----------------|
-| P1 | StatScore ≥ 0.7 AND LitScore ≥ 0.5 | Review first |
-| P2 | StatScore ≥ 0.7 AND LitScore < 0.5 | Review second |
-| P3 | StatScore < 0.7 AND LitScore ≥ 0.5 | Review third |
-| P4 | StatScore < 0.7 AND LitScore < 0.5 | Review last |
-
----
-
+``
 ## Tech Stack
 
 | Layer | Technology | Role |
