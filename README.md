@@ -93,7 +93,7 @@ StatScore and LitScore are presented independently to the reviewer. Weights for 
 
 MedSignal is organised into five layers. Data moves top to bottom; no layer reaches back up to a layer above it.
 
-![MedSignal System Architecture](architecture.png)
+![MedSignal System Architecture](architechture.png)
 
 > **GPT-4o** is called only in Agent 1 (query generation) and Agent 3 (SafetyBrief synthesis).
 > **Agent 2** is fully deterministic — ChromaDB cosine similarity only, no LLM.
