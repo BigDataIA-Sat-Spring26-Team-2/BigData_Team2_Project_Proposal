@@ -5,7 +5,7 @@
 MedSignal is a pharmacovigilance platform that detects drug safety signals from FDA FAERS adverse event data, retrieves supporting clinical literature from PubMed, and generates citation-grounded safety briefs using a three-agent LLM pipeline — compressing a process that takes human analysts hours into minutes.
 
 **Artifacts:**
-- Recording: [Watch on SharePoint](https://northeastern-my.sharepoint.com/:v:/g/personal/gupta_samik_northeastern_edu/IQCgJ-_kAEFMRrDcp7b7CD24AaBCUyK3Yo1PMsXTKgMQ9rc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2pqdmB)
+- Recording: [Watch on SharePoint](https://northeastern-my.sharepoint.com/:v:/r/personal/shukla_sid_northeastern_edu/Documents/Recordings/Meeting%20in%20Big%20Data-20260406_233915-Meeting%20Recording.mp4?csf=1&web=1&e=lxw6nS&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D))
 - Codelab: [https://codelabs-preview.appspot.com/?file_id=1N3Qlxqajmn2oE1vrZrOXWtvcYoXdNeL78wEkplkGJoY#5](https://codelabs-preview.appspot.com/?file_id=1-2xjYzKA4aqQpsUTEmdBejjFuJmLqpUBbcYmkvuQ6go/edit?tab=t.0#2)
 
 
