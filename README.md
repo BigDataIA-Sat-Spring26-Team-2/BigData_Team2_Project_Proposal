@@ -6,12 +6,9 @@ MedSignal is a pharmacovigilance platform that detects drug safety signals from 
 
 **Artifacts:**
 - Recording: [Watch on SharePoint](https://northeastern-my.sharepoint.com/:v:/g/personal/gupta_samik_northeastern_edu/IQCgJ-_kAEFMRrDcp7b7CD24AaBCUyK3Yo1PMsXTKgMQ9rc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2pqdmB)
-- Codelab: https://codelabs-preview.appspot.com/?file_id=1N3Qlxqajmn2oE1vrZrOXWtvcYoXdNeL78wEkplkGJoY#5
+- Codelab: [https://codelabs-preview.appspot.com/?file_id=1N3Qlxqajmn2oE1vrZrOXWtvcYoXdNeL78wEkplkGJoY#5](https://codelabs-preview.appspot.com/?file_id=1-2xjYzKA4aqQpsUTEmdBejjFuJmLqpUBbcYmkvuQ6go/edit?tab=t.0#2)
 
-Artifacts:
-Recording Link: [Watch on SharePoint](https://northeastern-my.sharepoint.com/:v:/g/personal/gupta_samik_northeastern_edu/IQCgJ-_kAEFMRrDcp7b7CD24AaBCUyK3Yo1PMsXTKgMQ9rc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2pqdmB)
 
-Codelab link: https://codelabs-preview.appspot.com/?file_id=1N3Qlxqajmn2oE1vrZrOXWtvcYoXdNeL78wEkplkGJoY#5
 ## The Problem
 
 The FDA receives over 2 million adverse event reports annually through FAERS. The average time from when a signal first appears in that data to when the FDA officially communicates a safety warning can span months. During that window, patients continue to be exposed to preventable harm.
