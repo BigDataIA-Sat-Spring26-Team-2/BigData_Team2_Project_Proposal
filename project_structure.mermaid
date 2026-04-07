@@ -1,0 +1,64 @@
+---
+title: MedSignal — Project Structure
+---
+graph TD
+    ROOT["📁 medsignal/"]
+
+    ROOT --> PIPELINE["📁 pipeline/"]
+    ROOT --> AGENTS["📁 agents/"]
+    ROOT --> SCRIPTS["📁 scripts/"]
+    ROOT --> APP["📁 app/"]
+    ROOT --> MODELS["📁 models/"]
+    ROOT --> TESTS["📁 tests/"]
+    ROOT --> DOCKER["🐳 docker-compose.yml"]
+    ROOT --> ENV["⚙️ .env.example"]
+    ROOT --> README["📄 README.md"]
+
+    PIPELINE --> KAFKA["📁 kafka/"]
+    PIPELINE --> SPARK["📁 spark/"]
+    KAFKA --> FAERS_PREP["📄 faers_prep.py\nRaw ASCII → four Kafka topics"]
+    SPARK --> BRANCH1["📄 branch1_join.py\n4-file join · dedup · PS filter · RxNorm"]
+    SPARK --> BRANCH2["📄 branch2_prr.py\nPRR computation · quality filters · checkpoint"]
+
+    AGENTS --> A1["📄 agent1_detector.py\nStatScore + GPT-4o search queries"]
+    AGENTS --> A2["📄 agent2_retriever.py\nChromaDB cosine retrieval + LitScore"]
+    AGENTS --> A3["📄 agent3_assessor.py\nPriority tier + SafetyBrief + Pydantic"]
+    AGENTS --> ORCH["📄 orchestrator.py\nLangGraph state machine"]
+
+    SCRIPTS --> RX["📄 build_rxnorm_cache.py\nNIH RxNorm API → PostgreSQL cache"]
+    SCRIPTS --> PUBMED["📄 load_pubmed.py\nNCBI Entrez → all-MiniLM-L6-v2 → ChromaDB"]
+
+    APP --> MAIN["📄 main.py\nStreamlit entrypoint"]
+    APP --> PAGES["📁 pages/"]
+    PAGES --> P1["📄 signal_feed.py\nAll flagged signals ranked by tier"]
+    PAGES --> P2["📄 signal_detail.py\nSafetyBrief · scores · PMIDs"]
+    PAGES --> P3["📄 hitl_queue.py\nApprove · Reject · Escalate"]
+    PAGES --> P4["📄 evaluation.py\nDetection lead time · precision-recall"]
+
+    MODELS --> SCHEMA["📄 schemas.py\nPydantic SafetyBrief schema"]
+
+    TESTS --> UNIT["📁 unit/\nPRR formula · dedup · PS filter\nStatScore · LitScore · priority tier\nPydantic retry logic"]
+    TESTS --> INTEG["📁 integration/\nPipeline · ChromaDB · agents · HITL"]
+    TESTS --> E2E["📁 e2e/\nFull pipeline on gabapentin sample\n→ PRR checkpoint"]
+
+    style ROOT fill:#1e293b,color:#f8fafc,stroke:#334155
+    style PIPELINE fill:#0f172a,color:#94a3b8,stroke:#1e3a5f
+    style AGENTS fill:#0f172a,color:#94a3b8,stroke:#1e3a5f
+    style SCRIPTS fill:#0f172a,color:#94a3b8,stroke:#1e3a5f
+    style APP fill:#0f172a,color:#94a3b8,stroke:#1e3a5f
+    style MODELS fill:#0f172a,color:#94a3b8,stroke:#1e3a5f
+    style TESTS fill:#0f172a,color:#94a3b8,stroke:#1e3a5f
+    style KAFKA fill:#172554,color:#93c5fd,stroke:#1d4ed8
+    style SPARK fill:#172554,color:#93c5fd,stroke:#1d4ed8
+    style PAGES fill:#172554,color:#93c5fd,stroke:#1d4ed8
+    style UNIT fill:#14532d,color:#86efac,stroke:#16a34a
+    style INTEG fill:#14532d,color:#86efac,stroke:#16a34a
+    style E2E fill:#14532d,color:#86efac,stroke:#16a34a
+    style A1 fill:#3b0764,color:#e9d5ff,stroke:#7c3aed
+    style A2 fill:#3b0764,color:#e9d5ff,stroke:#7c3aed
+    style A3 fill:#3b0764,color:#e9d5ff,stroke:#7c3aed
+    style ORCH fill:#3b0764,color:#e9d5ff,stroke:#7c3aed
+    style P1 fill:#431407,color:#fed7aa,stroke:#ea580c
+    style P2 fill:#431407,color:#fed7aa,stroke:#ea580c
+    style P3 fill:#431407,color:#fed7aa,stroke:#ea580c
+    style P4 fill:#431407,color:#fed7aa,stroke:#ea580c
